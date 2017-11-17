@@ -14,7 +14,7 @@ appreciated.
 
 ## Building
 
-This is a standard C++ console application
+This is a standard C++ console application.
 
 ## License
 
