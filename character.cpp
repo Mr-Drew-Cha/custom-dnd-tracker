@@ -2,8 +2,13 @@
 
 /* Prospective
 	Add age string
+	Add money/gold integer
 	Have constructor print attributes
-	Consider making this a base_class for an actual character or player
+	Add Armor object
+	Add Main, Side Arm, and Backup
+	Add Spells/Abilities
+	Add Inventory
+	Add traits, languages, and other proficiencies
 */
 
 #include "Character.hpp"

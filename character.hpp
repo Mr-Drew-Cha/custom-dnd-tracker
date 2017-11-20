@@ -8,16 +8,15 @@
 class Character
 {
 public:
-
     // Constructor and destructor
     Character(std::string name = "None", std::string race = "None", std::string class_set = "None");
     // Post: Instantized Character object with name, race, class_set, level, and xp
 
     ~Character();
-    // Post: Gives resources back and gives a farewell to player
+    // Post: Gives resources back and gives a farewell to the character
 
 
-    // Setters Attributes 1
+    // Mutators Attributes 1
     void setName(std::string in_name);
     // Post: Sets name to input string
 
@@ -28,7 +27,7 @@ public:
     // Post: Sets class_set to input string
 
 
-    // Setters Attributes 2
+    // Mutators Attributes 2
     void setLevel(int in_level);
     // Post: Sets level to input
 
@@ -45,7 +44,7 @@ public:
     // Post: Sets speed to input
 
 
-    // Setters Attributes 3
+    // Mutators Attributes 3
     void setStrength(float in_strength);
     // Post: Sets strength to input
 
@@ -65,56 +64,62 @@ public:
     // Post: Sets charisma to input
 
 
-    // Getters Attributes 1
+    // Accessors Attributes 1
     std::string getName();
-    // Post: Returns character name
+    // Post: Returns character's name
 
     std::string getRace();
-    // Post: Returns character race
+    // Post: Returns character's race
 
     std::string getClass();
-    // Post: Returns character class_set
+    // Post: Returns character's class_set
 
 
-    // Getters Attributes 2
+    // Accessors Attributes 2
     int getLevel();
-    // Post: Returns character level
+    // Post: Returns character's level
 
     float getXp();
-    // Post: Returns character xp points
+    // Post: Returns character's xp points
 
 
-    // Getters Attributes 3
+    // Accessors Attributes 3
     float getHealth();
-    // Post: Returns character health
+    // Post: Returns character's health
 
     float getArmor();
-    // Post: Returns character armor
+    // Post: Returns character's armor
 
     float getSpeed();
-    // Post: Returns character speed
+    // Post: Returns character's speed
 
     float getStrength();
-    // Post: Sets strength to input
+    // Post: Returns character's strength
 
     float getDexterity();
-    // Post: Sets dexterity to input
+    // Post: Returns character's dexterity
 
     float getConstitution();
-    // Post: Sets constitution to input
+    // Post: Returns character's constitution
 
     float getIntelligence();
-    // Post: Sets intelligence to input
+    // Post: Returns character's intelligence
 
     float getWisdom();
-    // Post: Sets wisdom to input
+    // Post: Returns character's wisdom
 
     float getCharisma();
-    // Post: Sets charisma to input
+    // Post: Return character's charisma
 
+
+    // Accessors Unique Traits
+    std::string getUniqueAbility();
+    // Post: Returns character's unique ability
+
+    std::string getUniqueWeakness();
+    // Post: Returns characters's unique weakness
 
 private:
-
     std::string name;
     std::string race;
     std::string class_set;
@@ -136,8 +141,9 @@ private:
     float wisdom;
     float charisma;
 
-
-
+    // Unique Attributes
+    std::string unique_ability;
+    std::string unique_weakness;
 };
 
 #endif
