@@ -1,7 +1,7 @@
 // Character class file
 
 /* Prospective
-	Add age string
+	Add age int
 	Add money/gold integer
 	Have constructor print attributes
 	Add Armor object
