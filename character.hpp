@@ -8,7 +8,6 @@
 class Character
 {
 public:
-    // Constructor and destructor
     Character(std::string m_name = "None", std::string m_race = "None", std::string m_class_set = "None");
     // Post: Instantized Character object with name, race, class_set, level, and xp
 

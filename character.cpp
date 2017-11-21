@@ -11,13 +11,13 @@
 	Add traits, languages, and other proficiencies
 */
 
-#include "Character.hpp"
+#include "character.hpp"
+
 #include <iostream>
 #include <string>
 
-// Constructor
 Character::Character(std::string name, std::string race, std::string class_set)
-: m_level(1), m_xp(0.00),
+  : m_level(1), m_xp(0.00),
 m_health(1.00), m_armor(1.00), m_speed(5.00)
 m_strength(1.00), m_dexterity(1.00), m_constitution(1.00), m_intelligence(1.00), m_wisdom(1.00), m_charisma(1.00)
 {
@@ -30,11 +30,11 @@ m_strength(1.00), m_dexterity(1.00), m_constitution(1.00), m_intelligence(1.00),
 
 Character::~Character()
 {
-	std::cout << "\n\nFarewell, sir!";
+	std::cout << "\n\nFarewell!";
 }
 
 
-// Setters Attributes 1
+// Mutators Attributes 1
 void Character::setName(std::string in_name)
 {
 	m_name = in_name;
@@ -51,7 +51,7 @@ void Character::setClass(std::string in_class_set)
 }
 
 
-// Setters Attributes 2
+// Mutators Attributes 2
 void Character::setLevel(int in_level)
 {
 	m_level = in_level;
@@ -78,7 +78,7 @@ void Character::setSpeed(float in_speed)
 }
 
 
-// Setters Attributes 3
+// Mutators Attributes 3
 void Character::setStrength(float in_strength)
 {
 	m_strength = in_strength;
@@ -110,7 +110,7 @@ void Character::setCharisma(float in_charisma)
 }
 
 
-// Getters Attributes 1
+// Accessors Attributes 1
 std::string Character::getName()
 {
 	return m_name;
@@ -127,7 +127,7 @@ std::string Character::getClass()
 }
 
 
-// Getters Attributes 2
+// Accessors Attributes 2
 int Character::getLevel()
 {
 	return m_level;
@@ -154,7 +154,7 @@ float Character::getSpeed()
 }
 
 
-// Getters Attributes 3
+// Accessors Attributes 3
 float Character::getStrength()
 {
 	return m_strength;
