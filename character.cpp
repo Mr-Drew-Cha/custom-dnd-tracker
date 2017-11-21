@@ -17,9 +17,9 @@
 
 // Constructor
 Character::Character(std::string name, std::string race, std::string class_set)
-: level(1), xp(0.00),
-health(1.00), armor(1.00), speed(5.00)
-strength(1.00), dexterity(1.00), constitution(1.00), intelligence(1.00), wisdom(1.00), charisma(1.00)
+: m_level(1), m_xp(0.00),
+m_health(1.00), m_armor(1.00), m_speed(5.00)
+m_strength(1.00), m_dexterity(1.00), m_constitution(1.00), m_intelligence(1.00), m_wisdom(1.00), m_charisma(1.00)
 {
 	setName(name);
 	setRace(race);
@@ -37,150 +37,150 @@ Character::~Character()
 // Setters Attributes 1
 void Character::setName(std::string in_name)
 {
-	name = in_name;
+	m_name = in_name;
 }
 
 void Character::setRace(std::string in_race)
 {
-	race = in_race;
+	m_race = in_race;
 }
 
 void Character::setClass(std::string in_class_set)
 {
-	class_set = in_class_set;
+	m_class_set = in_class_set;
 }
 
 
 // Setters Attributes 2
 void Character::setLevel(int in_level)
 {
-	level = in_level;
+	m_level = in_level;
 }
 
 void Character::setXp(float in_xp)
 {
-	xp = 0.00;
+	m_xp = 0.00;
 }
 
 void Character::setHealth(float in_health)
 {
-	health = in_health;
+	m_health = in_health;
 }
 
 void Character::setArmor(float in_armor)
 {
-	armor = in_armor;
+	m_armor = in_armor;
 }
 
 void Character::setSpeed(float in_speed)
 {
-	speed = in_speed;
+	m_speed = in_speed;
 }
 
 
 // Setters Attributes 3
 void Character::setStrength(float in_strength)
 {
-	strength = in_strength;
+	m_strength = in_strength;
 }
 
 void Character::setDexterity(float in_dexterity)
 {
-	dexterity = in_dexterity;
+	m_dexterity = in_dexterity;
 }
 
 void Character::setConstitution(float in_constitution)
 {
-	constitution = in_constitution;
+	m_constitution = in_constitution;
 }
 
 void Character::setIntelligence(float in_intelligence)
 {
-	intelligence = in_intelligence;
+	m_intelligence = in_intelligence;
 }
 
 void Character::setWisdom(float in_wisdom)
 {
-	wisdom = in_wisdom;
+	m_wisdom = in_wisdom;
 }
 
 void Character::setCharisma(float in_charisma)
 {
-	charisma = in_charisma;
+	m_charisma = in_charisma;
 }
 
 
 // Getters Attributes 1
 std::string Character::getName()
 {
-	return name;
+	return m_name;
 }
 
 std::string Character::getRace()
 {
-	return race;
+	return m_race;
 }
 
 std::string Character::getClass()
 {
-	return class_set;
+	return m_class_set;
 }
 
 
 // Getters Attributes 2
 int Character::getLevel()
 {
-	return level;
+	return m_level;
 }
 
 float Character::getXp()
 {
-	return xp;
+	return m_xp;
 }
 
 float Character::getHealth()
 {
-	return health;
+	return m_health;
 }
 
 float Character::getArmor()
 {
-	return armor;
+	return m_armor;
 }
 
 float Character::getSpeed()
 {
-	return speed;
+	return m_speed;
 }
 
 
 // Getters Attributes 3
 float Character::getStrength()
 {
-	return strength;
+	return m_strength;
 }
 
 float Character::getDexterity()
 {
-	return dexterity;
+	return m_dexterity;
 }
 
 float Character::getConstitution()
 {
-	return constitution;
+	return m_constitution;
 }
 
 float Character::getIntelligence()
 {
-	return intelligence:
+	return m_intelligence:
 }
 
 float Character::getWisdom()
 {
-	return wisdom;
+	return m_wisdom;
 }
 
 float Character::getCharisma()
 {
-	return charisma;
+	return m_charisma;
 }

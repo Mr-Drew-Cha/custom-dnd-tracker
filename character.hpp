@@ -9,7 +9,7 @@ class Character
 {
 public:
     // Constructor and destructor
-    Character(std::string name = "None", std::string race = "None", std::string class_set = "None");
+    Character(std::string m_name = "None", std::string m_race = "None", std::string m_class_set = "None");
     // Post: Instantized Character object with name, race, class_set, level, and xp
 
     ~Character();
@@ -120,30 +120,30 @@ public:
     // Post: Returns characters's unique weakness
 
 private:
-    std::string name;
-    std::string race;
-    std::string class_set;
+    std::string m_name;
+    std::string m_race;
+    std::string m_class_set;
 
     // Attributes Group 1
-    int level;
-    float xp;
+    int m_level;
+    float m_xp;
 
     // Attributes Group 2
-    float health;
-    float armor;
-    float speed;
+    float m_health;
+    float m_armor;
+    float m_speed;
 
     // Attributes Group 3
-    float strength;
-    float dexterity;
-    float constitution;
-    float intelligence;
-    float wisdom;
-    float charisma;
+    float m_strength;
+    float m_dexterity;
+    float m_constitution;
+    float m_intelligence;
+    float m_wisdom;
+    float m_charisma;
 
     // Unique Attributes
-    std::string unique_ability;
-    std::string unique_weakness;
+    std::string m_unique_ability;
+    std::string m_unique_weakness;
 };
 
 #endif
