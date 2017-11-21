@@ -62,7 +62,7 @@ void Character::setXp(int in_xp)
 	m_xp = in_xp;
 }
 
-void Character::setHealth(float in_health)
+void Character::setHealth(int in_health)
 {
 	m_health = in_health;
 }
