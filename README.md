@@ -1,7 +1,8 @@
-# dnd-tracker
+# custom-dnd-tracker
 
 This project is intended to help Dungeons and Dragons players facilitate the 
-playing and keeping track of the game.
+playing and keeping track of the game. It's based on custom rules, modified
+by Andrew Cha.
 
 ## Contact
 
