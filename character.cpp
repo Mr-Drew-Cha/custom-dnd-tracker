@@ -17,7 +17,7 @@
 #include <string>
 
 Character::Character(std::string name, std::string race, std::string class_set)
-  : m_level(1), m_xp(0.00),
+  : m_level(1), m_xp(0),
 m_health(1.00), m_armor(1.00), m_speed(5.00)
 m_strength(1.00), m_dexterity(1.00), m_constitution(1.00), m_intelligence(1.00), m_wisdom(1.00), m_charisma(1.00)
 {
@@ -57,9 +57,9 @@ void Character::setLevel(int in_level)
 	m_level = in_level;
 }
 
-void Character::setXp(float in_xp)
+void Character::setXp(int in_xp)
 {
-	m_xp = 0.00;
+	m_xp = in_xp;
 }
 
 void Character::setHealth(float in_health)
@@ -133,7 +133,7 @@ int Character::getLevel()
 	return m_level;
 }
 
-float Character::getXp()
+int Character::getXp()
 {
 	return m_xp;
 }

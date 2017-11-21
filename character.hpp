@@ -30,7 +30,7 @@ public:
     void setLevel(int in_level);
     // Post: Sets level to input
 
-    void setXp(float in_xp);
+    void setXp(int in_xp);
     // Post: Sets xp to input
 
     void setHealth(float in_health);
@@ -78,7 +78,7 @@ public:
     int getLevel();
     // Post: Returns character's level
 
-    float getXp();
+    int getXp();
     // Post: Returns character's xp points
 
 
