@@ -8,17 +8,38 @@
 	* Dungeon master bipass
 */
 
+// Other Files:
+// ADD ITEM PARAMETERS TO CONSTRUCTORS (weapon.hpp)
+// CONSIDER enum for item names (weapon.hpp)
+// CONSIDER adding an insert & delete BattleStyle functions (weapon.hpp)
+
 #include "character.hpp"
+#include "item.hpp"
+#include "weapon.hpp"
+
 #include <iostream>
 #include <string>
 
 int main()
 {
-	Character Joseph("Lin", "Human/Gnome", "Cleric");
+  /*
+  Character Jim("Lin", "Human/Gnome", "Cleric");
 
-	std::cout << std::endl; // formatting
+  std::cout << "\n"; // formatting
 
-	std::cout << Joseph.getName();
+  std::cout << Jim.getName();
+  */
 
-	return 0;
+  //Weapon sword();
+
+  Weapon sword("Long Sword", "A good, solid sword", 50,
+               10, true, {BattleStyle::SLASH});
+
+  // sword.setName("Xcaliber");
+
+  std::cout << sword.getName() << "\n";
+  std::cout << sword.getDamage() << "\n";
+  std::cout << sword.getDamageTypes() << "\n";
+
+  return 0;
 }

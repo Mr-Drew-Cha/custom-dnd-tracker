@@ -1,0 +1,22 @@
+#ifndef BATTLESTYLE_HPP
+#define BATTLESTYLE_HPP
+
+enum class BattleStyle
+{
+  NONE,
+  BLUNT,
+  HEAVY,
+  LIGHT,
+  PIERCING,
+  RANGE,
+  REACH,
+  ROOT,
+  SLASH,
+  SNARE,
+  SPECIAL,
+  THROWN,
+  TWO_HANDED,
+  VERSATILE
+};
+
+#endif // BATTLESTYLE_HPP

@@ -1,8 +1,17 @@
-#include "item.hpp"
+// MAKE accessors const
+// SELECTIVELY CHOOSE WHAT TO CALL FUNCTIONS FOR AND...
+// WHAT TO INITIALIZE IN COLON AREA
 
+#include "item.hpp"
 
 Item::Item()
   : m_name("None"), m_description("None"), m_cost(0)
+{
+  // Intentionally blank
+}
+
+Item::Item(std::string in_name, std::string in_description, int in_cost)
+  : m_name(in_name), m_description(in_description), m_cost(in_cost)
 {
   // Intentionally blank
 }
@@ -12,36 +21,35 @@ Item::~Item()
   // Intentionally blank
 }
 
-
 // Mutators
-Item::setName(std::string in_name)
+void Item::setName(std::string in_name)
 {
   m_name = in_name;
 }
 
-Item::setDescription(std::string in_description)
+void Item::setDescription(std::string in_description)
 {
   m_description = in_description;
 }
 
-Item::setCost(int in_cost)
+void Item::setCost(int in_cost)
 {
   m_cost = in_cost;
 }
 
 
 // Accessors
-Item::getName()
+std::string Item::getName() const
 {
   return m_name;
 }
 
-Item::getDescription()
+std::string Item::getDescription() const
 {
   return m_description;
 }
 
-Item::getCost()
+int Item::getCost() const
 {
   return m_cost;
 }
