@@ -7,8 +7,6 @@
 
 #include <vector>
 
-enum class ArmorType {LIGHT, MEDIUM, HEAVY};
-
 class Armor : public Item
 {
 public:
@@ -20,7 +18,7 @@ public:
 
   Armor(std::string in_name, std::string in_description, int in_cost,
         int in_health_bonus, ArmorType in_armor_type, std::vector<BattleStyle> in_resistances);
-  // Post: Initializes name, description, cost, health bonus, armor type, and armor resistances
+  // Post: Initializes name, description, cost, health bonus, armor type, and armor resistances to specified values
 
   ~Armor();
   // Post: Default Destructor
@@ -44,6 +42,9 @@ public:
 
   std::vector<BattleStyle> getResistances() const;
   // Post: Returns armor's resistances
+
+  // Public Variables
+  enum class ArmorType {LIGHT, MEDIUM, HEAVY};
 
 private:
   int m_health_bonus;

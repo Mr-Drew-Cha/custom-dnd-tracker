@@ -19,6 +19,7 @@
 #include "armor.hpp"
 #include "character.hpp"
 #include "item.hpp"
+#include "shield.hpp"
 #include "weapon.hpp"
 
 #include <iostream>
