@@ -8,7 +8,7 @@ Weapon::Weapon()
 }
 
 Weapon::Weapon(int in_damage)
-  : m_damage(in_damage), m_martial(false)
+  : m_damage(in_damage), m_martial(false), m_damage_types({BattleStyle::NONE})
 {
   // Intentionally blank
 }

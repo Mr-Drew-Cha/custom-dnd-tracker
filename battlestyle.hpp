@@ -1,6 +1,7 @@
 #ifndef BATTLESTYLE_HPP
 #define BATTLESTYLE_HPP
 
+
 enum class BattleStyle
 {
   NONE,

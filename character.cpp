@@ -25,12 +25,12 @@ m_strength(1.00), m_dexterity(1.00), m_constitution(1.00), m_intelligence(1.00),
 	setRace(race);
 	setClass(class_set);
 
-	std::cout << "Welcome to the party!";
+	std::cout << "Welcome to the party!\n";
 }
 
 Character::~Character()
 {
-	std::cout << "\n\nFarewell!";
+	std::cout << "\nFarewell!\n\n";
 }
 
 

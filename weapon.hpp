@@ -1,6 +1,7 @@
 #ifndef WEAPON_HPP
 #define WEAPON_HPP
 
+
 #include "battlestyle.hpp"
 #include "item.hpp"
 
@@ -13,11 +14,11 @@ public:
   // Post: Initializes members to default/base values
 
   Weapon(int in_damage);
-  // Post: Initializes damage to a specified value, martial = false
+  // Post: Initializes damage to a specified value, and to default/base for the rest
 
   Weapon(std::string in_name, std::string in_description, int in_cost,
          int in_damage, bool in_martial, std::vector<BattleStyle> in_damage_types);
-  // Post: Initializes damage, martial, & damage_type toa specified value
+  // Post: Initializes name, description, cost, damage, martial, & damage_type toa specified value
 
   ~Weapon();
   // Post: Default Destructor
