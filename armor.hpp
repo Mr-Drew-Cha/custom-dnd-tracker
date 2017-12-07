@@ -7,6 +7,8 @@
 
 #include <vector>
 
+enum class ArmorType {LIGHT, MEDIUM, HEAVY}; // MOVE?
+
 class Armor : public Item
 {
 public:
@@ -42,9 +44,6 @@ public:
 
   std::vector<BattleStyle> getResistances() const;
   // Post: Returns armor's resistances
-
-  // Public Variables
-  enum class ArmorType {LIGHT, MEDIUM, HEAVY};
 
 private:
   int m_health_bonus;

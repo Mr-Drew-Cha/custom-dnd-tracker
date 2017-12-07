@@ -6,6 +6,10 @@
 
 #include <vector>
 
+// MOVE?
+enum class BlockType {PHYSICAL, MAGIC};
+enum class DieType {D4, D6, D8, D10, D12, D20};
+
 class Shield : public Armor
 {
 public:
@@ -32,10 +36,6 @@ public:
 
   DieType getDieType() const;
   // Post: Returns shield's die type
-
-  // Public Variables
-  enum class BlockType {PHYSICAL, MAGIC};
-  enum class DieType {D4, D6, D8, D10, D12, D20};
 
 private:
   const int m_health_bonus = 0;
