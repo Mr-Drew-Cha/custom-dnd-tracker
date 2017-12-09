@@ -12,6 +12,12 @@ Armor::Armor(int in_health_bonus)
   // Intentionally blank
 }
 
+Armor::Armor(std::string in_name, std::string in_description, int in_cost, ArmorType in_armor_type)
+  : Item(in_name, in_description, in_cost), m_armor_type(in_armor_type)
+{
+  // Intentionally blank
+}
+
 Armor::Armor(std::string in_name, std::string in_description, int in_cost,
                int in_health_bonus, ArmorType in_armor_type, std::vector<BattleStyle> in_resistances)
   : Item(in_name, in_description, in_cost), m_health_bonus(in_health_bonus), m_armor_type(in_armor_type), m_resistances({in_resistances})

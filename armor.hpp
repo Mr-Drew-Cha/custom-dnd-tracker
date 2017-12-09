@@ -18,6 +18,9 @@ public:
   Armor(int in_health_bonus);
   // Post: Initializes health bonus to a specified value, and to default/base for the rest
 
+  Armor(std::string in_name, std::string in_description, int in_cost, ArmorType in_armor_type);
+  // Post: Initializes name, description, and armor type to specified values, used for shields
+
   Armor(std::string in_name, std::string in_description, int in_cost,
         int in_health_bonus, ArmorType in_armor_type, std::vector<BattleStyle> in_resistances);
   // Post: Initializes name, description, cost, health bonus, armor type, and armor resistances to specified values

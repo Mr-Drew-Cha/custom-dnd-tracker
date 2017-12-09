@@ -19,8 +19,8 @@ public:
   Shield(std::vector<BlockType> in_block_types);
   // Post: Initializes block type to a specified value, and to default/base value for the rest
 
-  Shield(std::string in_name, std::string in_description, std::string in_cost,
-         DieType in_die_type, ArmorType in_armor_type, std::vector<BlockType> in_block_types);
+  Shield(std::string in_name, std::string in_description, int in_cost,
+         ArmorType in_armor_type, std::vector<BlockType> in_block_types, DieType in_die_type);
   // Post: Initializes name, description, cost, die type, armor type, and block types to specified values
 
   // Mutators
@@ -39,6 +39,7 @@ public:
 
 private:
   const int m_health_bonus = 0;
+  const std::vector<BattleStyle> m_resistances = {BattleStyle::NONE};
   std::vector<BlockType> m_block_types;
   DieType m_die_type;
 };
