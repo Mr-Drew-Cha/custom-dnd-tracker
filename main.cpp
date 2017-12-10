@@ -1,18 +1,18 @@
 // DnD Game
 
 /*
+	* Check shield objects
+	* Add die functions
+	* Add objects to character or new player class
+	*
 	* Not all includes needed in main, just for debugging
 	*
 	* Consider giving Character only a name and making the race and class
 	* a sub class
 	*
-	* Update armor for area (e.g. head)
-	* Add shield objects
-	*
 	* Convert enums and vectors to string for cout
 	* Consider enum for all item names (b/c select number)
 	* Add insert and delete functions for vectors (weapon.hpp, armor.hpp)
-	*
 	* Dungeon master bipass
 */
 

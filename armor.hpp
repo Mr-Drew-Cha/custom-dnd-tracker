@@ -7,7 +7,9 @@
 
 #include <vector>
 
-enum class ArmorType {LIGHT, MEDIUM, HEAVY}; // MOVE?
+// MOVE?
+enum class ArmorType {LIGHT, MEDIUM, HEAVY};
+enum class ArmorFit {HEAD, BODY, HAND, LEG};
 
 class Armor : public Item
 {
@@ -22,8 +24,8 @@ public:
   // Post: Initializes name, description, and armor type to specified values, used for shields
 
   Armor(std::string in_name, std::string in_description, int in_cost,
-        int in_health_bonus, ArmorType in_armor_type, std::vector<BattleStyle> in_resistances);
-  // Post: Initializes name, description, cost, health bonus, armor type, and armor resistances to specified values
+        int in_health_bonus, ArmorType in_armor_type, ArmorFit in_armor_fit, std::vector<BattleStyle> in_resistances);
+  // Post: Initializes name, description, cost, health bonus, armor type, armor fit, and armor resistances to specified values
 
   ~Armor();
   // Post: Default Destructor
@@ -35,6 +37,9 @@ public:
   void setArmorType(ArmorType in_armor_type);
   // Post: Sets m_armor_type
 
+  void setArmorFit(ArmorFit in_armor_fit);
+  // Post: Sets m_armor_fit
+
   void setResistances(std::vector<BattleStyle> in_resistances);
   // Post: Sets m_resistances
 
@@ -45,12 +50,16 @@ public:
   ArmorType getArmorType() const;
   // Post: Returns armor's type
 
+  ArmorFit getArmorFit() const;
+  // Post: Returns where armor fitss
+
   std::vector<BattleStyle> getResistances() const;
   // Post: Returns armor's resistances
 
 private:
   int m_health_bonus;
   ArmorType m_armor_type;
+  ArmorFit m_armor_fit;
   std::vector<BattleStyle> m_resistances;
 };
 
