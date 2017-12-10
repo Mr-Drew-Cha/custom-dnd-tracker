@@ -8,6 +8,7 @@ Die::Die()
   srand(time(0));
 }
 
+
 int Die::d4Roll()
 {
   int die = (rand() % 4) + 1;

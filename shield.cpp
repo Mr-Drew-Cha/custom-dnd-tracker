@@ -19,6 +19,7 @@ Shield::Shield(std::string in_name, std::string in_description, int in_cost,
   // Intentionally blank
 }
 
+
 // Mutators
 void Shield::setBlockTypes(std::vector<BlockType> in_block_types)
 {
@@ -29,6 +30,7 @@ void Shield::setDieType(DieType in_die_type)
 {
   m_die_type = in_die_type;
 }
+
 
 // Accessors
 std::vector<BlockType> Shield::getBlockTypes() const

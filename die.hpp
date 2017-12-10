@@ -8,6 +8,7 @@ public:
   Die();
   // Post: Seeds random number generator for subsequent rolls
 
+
   // Roll Functions
   int d4Roll();
   // Post: Returns an int randomly between 1 and 4

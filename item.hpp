@@ -12,8 +12,6 @@ public:
   Item(std::string in_name, std::string in_description, int in_cost);
   // Post: Initializes item's to specified values
 
-  ~Item();
-  // Post: Destroys item object
 
   // Mutators
   void setName(std::string in_name);
@@ -25,6 +23,7 @@ public:
   void setCost(int in_cost);
   // Post: Sets m_cost;
 
+
   // Accessors
   std::string getName() const;
   // Post: Returns item's name
@@ -34,6 +33,7 @@ public:
 
   int getCost() const;
   // Post: Returns item's cost in gold
+
 
 private:
   std::string m_name;

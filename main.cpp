@@ -1,8 +1,8 @@
 // DnD Game
 
 /*
-	* Add die functions
 	* Add objects to character or new player class
+	* Set default parameters (equals to (e.g. = "None")) for all constructors
 	*
 	* Not all includes needed in main, just for debugging
 	*
@@ -12,6 +12,7 @@
 	* Convert enums and vectors to string for cout
 	* Consider enum for all item names (b/c select number)
 	* Add insert and delete functions for vectors (weapon.hpp, armor.hpp)
+	* Move enums in class?
 	* Have armor type hinder speed (LIGHT -0, MEDIUM -1, HEAVY -2, -5 = 1 movement space)
 	* Consider namespaces
 	* Dungeon master bipass

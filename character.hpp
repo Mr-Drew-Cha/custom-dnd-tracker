@@ -4,14 +4,14 @@
 
 #include <string>
 
+enum class Race {DEMON, DRAGONBORN, DWARVE, ELVE, FAIRY, FAUN, GOBLIN, GNOME, HUMAN, ORC, TIEFLING};
+enum class ClassSet {BARBARIAN, BARD, CLERIC, FIGHTER, KNIGHT, MAGICIAN, MONK, RANGER, ROGUE};
+
 class Character
 {
 public:
-    Character(std::string m_name = "None", std::string m_race = "None", std::string m_class_set = "None");
+    Character(std::string m_name = "None", Race m_race = Race::HUMAN, ClassSet m_class_set = ClassSet::BARBARIAN);
     // Post: Instantized Character object with name, race, class_set, level, and xp
-
-    ~Character();
-    // Post: Gives resources back and gives a farewell to the character
 
 
     // Mutators Attributes 1
@@ -63,63 +63,64 @@ public:
 
 
     // Accessors Attributes 1
-    std::string getName();
+    std::string getName() const;
     // Post: Returns character's name
 
-    std::string getRace();
+    std::string getRace() const;
     // Post: Returns character's race
 
-    std::string getClass();
+    std::string getClass() const;
     // Post: Returns character's class_set
 
 
     // Accessors Attributes 2
-    int getLevel();
+    int getLevel() const;
     // Post: Returns character's level
 
-    int getXp();
+    int getXp() const;
     // Post: Returns character's xp points
 
 
     // Accessors Attributes 3
-    float getHealth();
+    float getHealth() const;
     // Post: Returns character's health
 
-    float getArmor();
+    float getArmor() const;
     // Post: Returns character's armor
 
-    float getSpeed();
+    float getSpeed() const;
     // Post: Returns character's speed
 
-    float getStrength();
+    float getStrength() const;
     // Post: Returns character's strength
 
-    float getDexterity();
+    float getDexterity() const;
     // Post: Returns character's dexterity
 
-    float getConstitution();
+    float getConstitution() const;
     // Post: Returns character's constitution
 
-    float getIntelligence();
+    float getIntelligence() const;
     // Post: Returns character's intelligence
 
-    float getWisdom();
+    float getWisdom() const;
     // Post: Returns character's wisdom
 
-    float getCharisma();
+    float getCharisma() const;
     // Post: Return character's charisma
 
 
     // Accessors Unique Traits
-    std::string getUniqueAbility();
+    std::string getUniqueAbility() const;
     // Post: Returns character's unique ability
 
-    std::string getUniqueWeakness();
+    std::string getUniqueWeakness() const;
     // Post: Returns characters's unique weakness
+
 
 private:
     std::string m_name;
-    std::string m_race;
+    Race m_race;
     std::string m_class_set;
 
     // Attributes Group 1
@@ -131,7 +132,7 @@ private:
     float m_armor;
     float m_speed;
 
-    // Attributes Group 3
+    // Attributes Group 3std::string
     float m_strength;
     float m_dexterity;
     float m_constitution;

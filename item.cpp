@@ -1,7 +1,3 @@
-// MAKE accessors const
-// SELECTIVELY CHOOSE WHAT TO CALL FUNCTIONS FOR AND...
-// WHAT TO INITIALIZE IN COLON AREA
-
 #include "item.hpp"
 
 Item::Item()
@@ -16,10 +12,6 @@ Item::Item(std::string in_name, std::string in_description, int in_cost)
   // Intentionally blank
 }
 
-Item::~Item()
-{
-  // Intentionally blank
-}
 
 // Mutators
 void Item::setName(std::string in_name)

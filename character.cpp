@@ -16,21 +16,13 @@
 #include <iostream>
 #include <string>
 
-Character::Character(std::string name, std::string race, std::string class_set)
-  : m_level(1), m_xp(0),
+Character::Character(std::string in_name, Race in_race, ClassSet in_class_set)
+  : m_name(in_name), m_race(in_race), m_class_set(in_class_set),
+    m_level(1), m_xp(0),
 m_health(1.00), m_armor(1.00), m_speed(5.00),
 m_strength(1.00), m_dexterity(1.00), m_constitution(1.00), m_intelligence(1.00), m_wisdom(1.00), m_charisma(1.00)
 {
-	setName(name);
-	setRace(race);
-	setClass(class_set);
-
-	std::cout << "Welcome to the party!\n";
-}
-
-Character::~Character()
-{
-	std::cout << "\nFarewell!\n\n";
+  // Intentionally blank
 }
 
 
@@ -40,12 +32,12 @@ void Character::setName(std::string in_name)
 	m_name = in_name;
 }
 
-void Character::setRace(std::string in_race)
+void Character::setRace(Race in_race)
 {
 	m_race = in_race;
 }
 
-void Character::setClass(std::string in_class_set)
+void Character::setClass(ClassSet in_class_set)
 {
 	m_class_set = in_class_set;
 }
@@ -111,76 +103,76 @@ void Character::setCharisma(float in_charisma)
 
 
 // Accessors Attributes 1
-std::string Character::getName()
+std::string Character::getName() const
 {
 	return m_name;
 }
 
-std::string Character::getRace()
+Race Character::getRace() const
 {
 	return m_race;
 }
 
-std::string Character::getClass()
+ClassSet Character::getClass() const
 {
 	return m_class_set;
 }
 
 
 // Accessors Attributes 2
-int Character::getLevel()
+int Character::getLevel() const
 {
 	return m_level;
 }
 
-int Character::getXp()
+int Character::getXp() const
 {
 	return m_xp;
 }
 
-float Character::getHealth()
+float Character::getHealth() const
 {
 	return m_health;
 }
 
-float Character::getArmor()
+float Character::getArmor() const
 {
 	return m_armor;
 }
 
-float Character::getSpeed()
+float Character::getSpeed() const
 {
 	return m_speed;
 }
 
 
 // Accessors Attributes 3
-float Character::getStrength()
+float Character::getStrength() const
 {
 	return m_strength;
 }
 
-float Character::getDexterity()
+float Character::getDexterity() const
 {
 	return m_dexterity;
 }
 
-float Character::getConstitution()
+float Character::getConstitution() const
 {
 	return m_constitution;
 }
 
-float Character::getIntelligence()
+float Character::getIntelligence() const
 {
 	return m_intelligence;
 }
 
-float Character::getWisdom()
+float Character::getWisdom() const
 {
 	return m_wisdom;
 }
 
-float Character::getCharisma()
+float Character::getCharisma() const
 {
 	return m_charisma;
 }

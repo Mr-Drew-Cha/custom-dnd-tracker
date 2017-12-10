@@ -25,10 +25,6 @@ Armor::Armor(std::string in_name, std::string in_description, int in_cost,
   // Intentionally blank
 }
 
-Armor::~Armor()
-{
-  // Intentionally blank
-}
 
 // Mutators
 void Armor::setHealthBonus(int in_health_bonus)
@@ -50,6 +46,7 @@ void Armor::setResistances(std::vector<BattleStyle> in_resistances)
 {
   m_resistances = in_resistances;
 }
+
 
 // Accessors
 int Armor::getHealthBonus() const

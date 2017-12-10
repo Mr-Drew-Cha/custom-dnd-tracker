@@ -7,7 +7,6 @@
 
 #include <vector>
 
-// MOVE?
 enum class ArmorType {LIGHT, MEDIUM, HEAVY};
 enum class ArmorFit {HEAD, BODY, HAND, LEG};
 
@@ -27,8 +26,6 @@ public:
         int in_health_bonus, ArmorType in_armor_type, ArmorFit in_armor_fit, std::vector<BattleStyle> in_resistances);
   // Post: Initializes name, description, cost, health bonus, armor type, armor fit, and armor resistances to specified values
 
-  ~Armor();
-  // Post: Default Destructor
 
   // Mutators
   void setHealthBonus(int in_health_bonus);
@@ -43,6 +40,7 @@ public:
   void setResistances(std::vector<BattleStyle> in_resistances);
   // Post: Sets m_resistances
 
+
   // Accessors
   int getHealthBonus() const;
   // Post: Returns armor's health bonus
@@ -55,6 +53,7 @@ public:
 
   std::vector<BattleStyle> getResistances() const;
   // Post: Returns armor's resistances
+
 
 private:
   int m_health_bonus;

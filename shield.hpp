@@ -6,7 +6,6 @@
 
 #include <vector>
 
-// MOVE?
 enum class BlockType {PHYSICAL, MAGIC};
 enum class DieType {D4, D6, D8, D10, D12, D20};
 
@@ -23,6 +22,7 @@ public:
          ArmorType in_armor_type, std::vector<BlockType> in_block_types, DieType in_die_type);
   // Post: Initializes name, description, cost, die type, armor type, and block types to specified values
 
+
   // Mutators
   void setBlockTypes(std::vector<BlockType> in_block_types);
   // Post: Sets m_block_types
@@ -30,12 +30,14 @@ public:
   void setDieType(DieType in_die_type);
   // Post: Sets m_die_type
 
+
   // Accessors
   std::vector<BlockType> getBlockTypes() const;
   // Post: Returns shield's block types
 
   DieType getDieType() const;
   // Post: Returns shield's die type
+
 
 private:
   const int m_health_bonus = 0;

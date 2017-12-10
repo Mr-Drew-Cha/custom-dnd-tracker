@@ -20,8 +20,6 @@ public:
          int in_damage, bool in_martial, std::vector<BattleStyle> in_damage_types);
   // Post: Initializes name, description, cost, damage, martial, & damage_type toa specified value
 
-  ~Weapon();
-  // Post: Default Destructor
 
   // Mutators
   void setDamage(int in_damage);
@@ -32,6 +30,7 @@ public:
 
   void setDamageTypes(std::vector<BattleStyle> in_damage_types);
   // Post: Sets m_damage_types
+
 
   // Accessors
   int getDamage() const;

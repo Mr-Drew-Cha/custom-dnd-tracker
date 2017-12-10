@@ -20,10 +20,6 @@ Weapon::Weapon(std::string in_name, std::string in_description, int in_cost,
   // Intentionally blank
 }
 
-Weapon::~Weapon()
-{
-  // Intentionally blank
-}
 
 // Mutators
 void Weapon::setDamage(int in_damage)
@@ -40,6 +36,7 @@ void Weapon::setDamageTypes(std::vector<BattleStyle> in_damage_types)
 {
   m_damage_types = in_damage_types;
 }
+
 
 // Accessors
 int Weapon::getDamage() const
