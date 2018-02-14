@@ -1,0 +1,14 @@
+armor.cpp
+armor.hpp
+battlestyle.hpp
+character.cpp
+character.hpp
+die.cpp
+die.hpp
+item.cpp
+item.hpp
+main.cpp
+shield.cpp
+shield.hpp
+weapon.cpp
+weapon.hpp
